@@ -1,0 +1,164 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5faf5;
+  color: #263b2d;
+  line-height: 1.6;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 22px 7%;
+  background: #ffffff;
+  box-shadow: 0 2px 12px #0000000d;
+}
+
+.logo {
+  color: #315c40;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #83a98a;
+}
+
+.menu {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  color: #315c40;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: #83a98a;
+}
+
+.hero {
+  text-align: center;
+  padding: 85px 7%;
+  background: linear-gradient(135deg, #e4f1e5, #f7faf4);
+}
+
+.destaque {
+  color: #62896a;
+  letter-spacing: 4px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.hero h1 {
+  max-width: 750px;
+  margin: 0 auto 20px;
+  font-size: clamp(30px, 6vw, 48px);
+  line-height: 1.2;
+}
+
+.hero p {
+  margin-bottom: 22px;
+}
+
+.botao,
+.botao-whatsapp {
+  display: inline-block;
+  padding: 13px 22px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.botao {
+  background: #527d5b;
+  color: white;
+}
+
+.botao:hover {
+  background: #315c40;
+}
+
+.servicos {
+  padding: 65px 7%;
+  text-align: center;
+}
+
+.servicos h2,
+.contato h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.servicos-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 18px;
+}
+
+.servico {
+  padding: 25px 15px;
+  background: white;
+  border: 1px solid #e0ebdf;
+  border-radius: 14px;
+  box-shadow: 0 5px 15px #00000008;
+  font-weight: bold;
+}
+
+.contato {
+  padding: 65px 7%;
+  text-align: center;
+  background: #e4f1e5;
+}
+
+.botao-whatsapp {
+  background: #25d366;
+  color: white;
+  margin-top: 10px;
+}
+
+.botao-whatsapp:hover {
+  background: #1eae54;
+  transform: translateY(-2px);
+}
+
+footer {
+  padding: 22px;
+  text-align: center;
+  background: #315c40;
+  color: white;
+  font-size: 14px;
+}
+
+@media (max-width: 480px) {
+  .cabecalho {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .menu {
+    justify-content: center;
+  }
+
+  .hero {
+    padding: 60px 6%;
+  }
+}
