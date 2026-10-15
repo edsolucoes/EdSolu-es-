@@ -180,14 +180,16 @@ footer {
 }
 
 
+
 @media (max-width: 600px) {
   .hero {
-    background-position: center center;
-    background-size: contain;
+    background-size: 100% auto;
+    background-position: center top;
     background-repeat: no-repeat;
     background-color: #e4f1e5;
     min-height: 100svh;
     padding: 60px 6%;
   }
 }
+
 
