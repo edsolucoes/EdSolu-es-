@@ -54,11 +54,27 @@ body {
   color: #83a98a;
 }
 
+
 .hero {
   text-align: center;
   padding: 85px 7%;
-  background: linear-gradient(135deg, #e4f1e5, #f7faf4);
+  min-height: 100vh;
+  box-sizing: border-box;
+
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)),
+    url("Img%20_1030.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
 
 .destaque {
   color: #62896a;
