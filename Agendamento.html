@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agendar serviço | EdSoluções</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 25px 15px;
+      background: #F0F6EE;
+      font-family: Arial, sans-serif;
+      color: #304B34;
+    }
+    .agenda {
+      max-width: 480px;
+      margin: 20px auto;
+      padding: 25px 20px;
+      background: white;
+      border-radius: 18px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+    }
+    h1 {
+      text-align: center;
+      font-size: 27px;
+    }
+    .descricao {
+      text-align: center;
+      color: #666;
+      line-height: 1.5;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 13px;
+      margin: 8px 0 15px;
+      border: 1px solid #D5E1D1;
+      border-radius: 8px;
+      font-size: 16px;
+      background: #fff;
+    }
+    label {
+      font-size: 14px;
+      font-weight: bold;
+    }
+    button, .voltar {
+      display: block;
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 9px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button {
+      background: #456B4A;
+      color: white;
+    }
+    .voltar {
+      margin-top: 12px;
+      color: #456B4A;
+      background: #EAF2E7;
+    }
+  </style>
+</head>
+<body>
+  <main class="agenda">
+    <h1>📅 Agende seu serviço</h1>
+    <p class="descricao">
+      Preencha os dados abaixo para solicitar um agendamento
+      com a EdSoluções.
+    </p>
+    <form onsubmit="enviarAgendamento(event)">
+      <label for="nomeCliente">Seu nome</label>
+      <input id="nomeCliente" type="text"
+        placeholder="Digite seu nome" required>
+      <label for="telefoneCliente">Seu WhatsApp</label>
+      <input id="telefoneCliente" type="tel"
+        placeholder="DDD + número" required>
+      <label for="servicoCliente">Serviço desejado</label>
+      <select id="servicoCliente" required>
+        <option value="">Escolha um serviço</option>
+        <option>Jardinagem e poda</option>
+        <option>Corte de grama</option>
+        <option>Pintura</option>
+        <option>Limpeza de piscina</option>
+        <option>Limpeza de caixa d'água</option>
+        <option>Serviços hidráulicos</option>
+        <option>Alvenaria e reboco</option>
+        <option>Outro serviço</option>
+      </select>
+      <label for="dataCliente">Data desejada</label>
+      <input id="dataCliente" type="date" required>
+      <label for="horaCliente">Horário desejado</label>
+      <input id="horaCliente" type="time" required>
+      <label for="obsCliente">Observações (opcional)</label>
+      <textarea id="obsCliente" rows="3"
+        placeholder="Conte mais sobre o serviço"></textarea>
+      <button type="submit">
+        📲 Solicitar pelo WhatsApp
+      </button>
+    </form>
+    <a class="voltar" href="index.html">
+      ← Voltar ao site
+    </a>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
