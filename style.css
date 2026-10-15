@@ -179,22 +179,36 @@ footer {
   }
 }
 
+
 @media (max-width: 600px) {
   .hero {
-    background-size: cover;
-    background-position: center;
+    background-size: 100% auto;
+    background-position: center top;
     background-repeat: no-repeat;
 
-    min-height: auto;
+    min-height: 0;
+    height: auto;
     padding: 40px 6%;
-    box-sizing: border-box;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+
+  .hero .destaque {
+    margin-bottom: 10px;
+  }
+
+  .hero h1 {
+    margin-bottom: 12px;
+  }
+
+  .hero p {
+    margin-bottom: 14px;
+  }
 }
+
 
 
 
