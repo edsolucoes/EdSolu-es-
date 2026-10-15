@@ -181,15 +181,30 @@ footer {
 
 
 
+
 @media (max-width: 600px) {
   .hero {
     background-size: 100% auto;
     background-position: center top;
     background-repeat: no-repeat;
     background-color: #e4f1e5;
+
     min-height: 100svh;
     padding: 60px 6%;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .hero > * {
+    position: relative;
+    z-index: 1;
   }
 }
+
 
 
