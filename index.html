@@ -85,7 +85,33 @@
 </a>
   </section>
 
-
+<section id="agendamento" style="background: #F0F6EE; padding: 35px 20px; text-align: center; border-radius: 12px; margin: 25px 0;">
+  <h2>📅 Agende seu serviço</h2>
+  <p>Preencha os dados abaixo para solicitar seu agendamento.</p>
+  <form onsubmit="enviarAgendamento(event)" style="max-width: 450px; margin: auto;">
+    <input type="text" id="nomeCliente" placeholder="Seu nome" required style="width: 100%; padding: 12px; margin: 8px 0; box-sizing: border-box;">
+    <input type="tel" id="telefoneCliente" placeholder="Seu WhatsApp" required style="width: 100%; padding: 12px; margin: 8px 0; box-sizing: border-box;">
+    <select id="servicoCliente" required style="width: 100%; padding: 12px; margin: 8px 0; box-sizing: border-box;">
+      <option value="">Escolha o serviço</option>
+      <option>Jardinagem e poda</option>
+      <option>Corte de grama</option>
+      <option>Pintura</option>
+      <option>Limpeza de piscina</option>
+      <option>Limpeza de caixa d'água</option>
+      <option>Serviços hidráulicos</option>
+      <option>Alvenaria e reboco</option>
+      <option>Outro serviço</option>
+    </select>
+    <label for="dataCliente">Data desejada:</label>
+    <input type="date" id="dataCliente" required style="width: 100%; padding: 12px; margin: 8px 0; box-sizing: border-box;">
+    <label for="horaCliente">Horário desejado:</label>
+    <input type="time" id="horaCliente" required style="width: 100%; padding: 12px; margin: 8px 0; box-sizing: border-box;">
+    <textarea id="obsCliente" placeholder="Observações (opcional)" style="width: 100%; padding: 12px; margin: 8px 0; box-sizing: border-box;"></textarea>
+    <button type="submit" style="background: #456B4A; color: white; padding: 14px 20px; border: none; border-radius: 8px; width: 100%; font-size: 16px;">
+      📲 Enviar agendamento pelo WhatsApp
+    </button>
+  </form>
+</section>
 <section id="localizacao" style="background: #F0F6EE; padding: 35px 20px; text-align: center; border-radius: 12px; margin: 25px 0;">
   <div style="font-size: 32px; margin-bottom: 10px;">📍</div>
 
