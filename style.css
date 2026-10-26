@@ -222,4 +222,144 @@ footer {
 }
 
 
+/* SERVIÇOS - CARTÕES MODERNOS */
+.servicos {
+  padding: 60px 20px;
+}
+
+.servicos h2 {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.servicos-subtitulo {
+  text-align: center;
+  color: #5b6b5d;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+.servicos-lista {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.servico {
+  background: #ffffff;
+  border: 1px solid #dce8dc;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(38, 59, 45, 0.07);
+  transition: transform 0.25s ease,
+              box-shadow 0.25s ease,
+              border-color 0.25s ease;
+}
+
+.servico:hover {
+  transform: translateY(-5px);
+  border-color: #83a98a;
+  box-shadow: 0 10px 24px rgba(38, 59, 45, 0.13);
+}
+
+.servico summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 16px;
+  min-height: 90px;
+  color: #263b2d;
+  font-weight: 600;
+}
+
+.servico summary::-webkit-details-marker {
+  display: none;
+}
+
+.servico-icone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: #edf5eb;
+  font-size: 25px;
+  transition: transform 0.25s ease;
+}
+
+.servico:hover .servico-icone {
+  transform: scale(1.08);
+}
+
+.servico-nome {
+  flex: 1;
+  line-height: 1.4;
+}
+
+.servico-seta {
+  color: #315c40;
+  font-size: 23px;
+  transition: transform 0.25s ease;
+}
+
+.servico[open] .servico-seta {
+  transform: rotate(180deg);
+}
+
+.servico-descricao {
+  padding: 0 18px 20px;
+  color: #526256;
+  font-size: 14px;
+  line-height: 1.8;
+  animation: aparecer-servico 0.25s ease;
+}
+
+@keyframes aparecer-servico {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* TABLETS */
+@media (max-width: 800px) {
+  .servicos-lista {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+}
+
+/* CELULARES */
+@media (max-width: 480px) {
+  .servicos {
+    padding: 45px 16px;
+  }
+
+  .servicos-lista {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .servico summary {
+    min-height: 76px;
+    padding: 14px;
+  }
+
+  .servico-descricao {
+    padding: 0 16px 18px;
+  }
+}
+
+
 
