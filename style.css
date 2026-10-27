@@ -282,6 +282,7 @@ footer {
   display: none;
 }
 
+
 .servico-icone {
   display: flex;
   align-items: center;
@@ -291,9 +292,26 @@ footer {
   height: 48px;
   border-radius: 14px;
   background: #edf5eb;
-  font-size: 25px;
+  color: #315c40;
   transition: transform 0.25s ease;
 }
+
+.servico-icone svg {
+  width: 25px;
+  height: 25px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.servico-nome {
+  color: #263b2d;
+  flex: 1;
+  line-height: 1.4;
+}
+
 
 .servico:hover .servico-icone {
   transform: scale(1.08);
