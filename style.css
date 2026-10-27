@@ -384,4 +384,19 @@ footer {
 }
 
 
+/* Correção dos ícones dos serviços */
+.servico-icone svg {
+  display: block !important;
+  width: 28px !important;
+  height: 28px !important;
+  fill: none !important;
+  stroke: #315c40 !important;
+  stroke-width: 2 !important;
+  stroke-linecap: round !important;
+  stroke-linejoin: round !important;
+  overflow: visible;
+  opacity: 1;
+}
+
+
 
