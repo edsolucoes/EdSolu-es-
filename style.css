@@ -195,10 +195,10 @@ footer {
 
 @media (max-width: 600px) {
   .hero {
-    background-size: contain;
-    background-position: center top;
+    background-size: cover;
+    background-position: center ;
     background-repeat: no-repeat;
-    min-height: 0;
+    min-height: 350px;
     height: auto;
     padding: 20px 6%;
 
