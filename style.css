@@ -297,13 +297,15 @@ footer {
 }
 
 .servico-icone svg {
+  display: block;
   width: 25px;
   height: 25px;
   fill: none;
-  stroke: currentColor;
-  stroke-width: 1.6;
+  stroke: #315c40;
+  stroke-width: 1.8;
   stroke-linecap: round;
   stroke-linejoin: round;
+  visibility: visible;
 }
 
 .servico-nome {
