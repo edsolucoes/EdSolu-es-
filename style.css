@@ -230,15 +230,27 @@ footer {
   font-size: 14px;
 }
 
-@media (max-width: 480px) {
-  .cabecalho {
-    justify-content: center;
-    text-align: center;
-  }
+.cabecalho {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 16px 5%;
+  gap: 14px;
+}
 
-  .menu {
-    justify-content: center;
-  }
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+}
+
+.menu a {
+  font-size: 13px;
+}
 
   .hero {
     padding: 60px 6%;
