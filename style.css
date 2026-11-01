@@ -249,21 +249,39 @@ footer {
 
 @media (max-width: 600px) {
   .hero {
-  min-height: 430px;
-  height: auto;
-  padding: 70px 6%;
-}
+    min-height: 430px;
+    height: auto;
+    padding: 65px 6%;
+  }
 
-  .hero .destaque {
-    margin-bottom: 10px;
+  .hero-etiqueta {
+    font-size: 10px;
+    margin-bottom: 16px;
   }
 
   .hero h1 {
-    margin: 0 auto 12px;
+    font-size: clamp(29px, 8vw, 40px);
+    margin-bottom: 14px;
   }
 
   .hero p {
-    margin-bottom: 14px;
+    font-size: 15px;
+    margin-bottom: 22px;
+  }
+
+  .hero-acoes {
+    flex-direction: column;
+    gap: 13px;
+  }
+
+  .hero .botao {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+  }
+
+  .hero-link {
+    padding: 8px;
   }
 }
 
