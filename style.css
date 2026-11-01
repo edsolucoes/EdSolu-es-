@@ -125,7 +125,8 @@ font-weight: 400;
 .hero p {
   max-width: 620px;
   margin: 0 auto 28px;
-  color: #62666A;
+  color: #FFFFFF;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.55);
 font-size: 18px;
 font-weight: 600;
 text-shadow: 0 1px 3px rgba(255, 255, 255, 0.7);
