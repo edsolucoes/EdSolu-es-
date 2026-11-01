@@ -70,23 +70,18 @@ body {
 }
 
 .hero {
-  text-align: center;
-  padding: 85px 7%;
-  min-height: 100vh;
-  box-sizing: border-box;
-
+  min-height: 520px;
+  padding: 90px 7%;
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.55)),
+    linear-gradient(rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0.58)),
     url("IMG_1154.jpeg");
-
-  background-size: 100% 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 
