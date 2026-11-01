@@ -230,6 +230,7 @@ footer {
   font-size: 14px;
 }
 
+@media (max-width: 480px) {
 .cabecalho {
   flex-direction: column;
   justify-content: center;
