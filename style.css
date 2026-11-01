@@ -115,11 +115,10 @@ font-weight: 400;
   max-width: 750px;
   margin: 0 auto 18px;
   color: #F1EEE8;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.55);
   font-size: clamp(32px, 6vw, 54px);
   line-height: 1.15;
   font-weight: 700;
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
 }
 
 .hero p {
