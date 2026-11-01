@@ -110,7 +110,8 @@ body {
 }
 
 .hero h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'DM Serif Display', serif;
+font-weight: 400;
   max-width: 750px;
   margin: 0 auto 18px;
   color: #203b2a;
