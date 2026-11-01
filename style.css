@@ -73,7 +73,7 @@ body {
   min-height: 520px;
   padding: 90px 7%;
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.28)),
+    linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.18)),
     url("IMG_1154.jpeg");
   background-size: cover;
   background-position: center;
