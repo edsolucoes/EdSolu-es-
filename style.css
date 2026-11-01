@@ -120,7 +120,44 @@ body {
 }
 
 .hero p {
-  margin-bottom: 22px;
+  max-width: 620px;
+  margin: 0 auto 28px;
+  color: #344b39;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.hero-acoes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.hero .botao {
+  padding: 14px 25px;
+  background: #315c40;
+  color: #ffffff;
+  border-radius: 8px;
+  font-size: 14px;
+  box-shadow: 0 6px 18px rgba(49, 92, 64, 0.2);
+}
+
+.hero .botao:hover {
+  background: #244630;
+  transform: translateY(-2px);
+}
+
+.hero-link {
+  color: #315c40;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.hero-link:hover {
+  color: #83a98a;
 }
 
 .botao,
