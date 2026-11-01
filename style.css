@@ -114,7 +114,8 @@ body {
 font-weight: 400;
   max-width: 750px;
   margin: 0 auto 18px;
-  color: #555B61;
+  color: #FFFFFF;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
   font-size: clamp(32px, 6vw, 54px);
   line-height: 1.15;
   font-weight: 700;
