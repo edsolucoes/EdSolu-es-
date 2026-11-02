@@ -171,23 +171,73 @@
 
 
 
-    <section id="galeria" style="padding: 40px 20px; max-width: 1100px; margin: auto;">
-  <h2 style="text-align: center; margin-bottom: 25px;">Nossos trabalhos</h2>
-  <p style="text-align: center; margin-bottom: 25px;">
-    Conheça alguns dos serviços realizados pela EdSoluções.
-  </p>
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px;">
-    <img src="020f6268-c9d6-456a-a622-3c7a67ccac12.jpeg" alt="Trabalho da EdSoluções" style="width: 100%; height: 230px; object-fit: cover; border-radius: 12px;">
-    <img src="363c67cb-87cb-42e2-940c-d9240dbb740d.jpeg" alt="Trabalho da EdSoluções" style="width: 100%; height: 230px; object-fit: cover; border-radius: 12px;">
-    <img src="3c79be4c-0a0b-433e-9f8b-5adf0187528b.jpeg" alt="Trabalho da EdSoluções" style="width: 100%; height: 230px; object-fit: cover; border-radius: 12px;">
-    <img src="56384996-C5A8-4676-AD2C-F64148CAD73F.jpeg" alt="Trabalho da EdSoluções" style="width: 100%; height: 230px; object-fit: cover; border-radius: 12px;">
-    <img src="75d91bf2-f0ef-441b-b44f-4f7d6022d7a8.jpeg" alt="Trabalho da EdSoluções" style="width: 100%; height: 230px; object-fit: cover; border-radius: 12px;">
-    <img src="8cbb3c5c-0fa0-4b94-8856-013ee1348be9.jpeg" alt="Trabalho da EdSoluções" style="width: 100%; height: 230px; object-fit: cover; border-radius: 12px;">
-    <img src="a0a1acea-4018-49ee-a4c7-206516c87752.jpeg" alt="Trabalho da EdSoluções" style="width: 100%; height: 230px; object-fit: cover; border-radius: 12px;">
-    <img src="c56e4f21-b237-4db2-9773-1986f94c93eb.jpeg" alt="Trabalho da EdSoluções" style="width: 100%; height: 230px; object-fit: cover; border-radius: 12px;">
-    <img src="fdaa908f-6a7a-4ae2-82af-af91c2f84b90.jpeg" alt="Trabalho da EdSoluções" style="width: 100%; height: 230px; object-fit: cover; border-radius: 12px;">
+    
+<section id="galeria" class="galeria">
+  <div class="galeria-cabecalho">
+    <h2>Nossos trabalhos</h2>
+    <p>Conheça alguns dos serviços realizados pela EdSoluções.</p>
   </div>
+
+  <div class="galeria-filtros">
+    <button class="filtro ativo" data-filtro="todos">Todos</button>
+    <button class="filtro" data-filtro="jardinagem">Jardinagem</button>
+    <button class="filtro" data-filtro="pintura">Pintura</button>
+    <button class="filtro" data-filtro="piscina">Piscina</button>
+    <button class="filtro" data-filtro="hidraulica">Hidráulica</button>
+    <button class="filtro" data-filtro="alvenaria">Alvenaria</button>
+    <button class="filtro" data-filtro="caixa-dagua">Caixa d'água</button>
+  </div>
+
+  <div class="galeria-grade">
+
+    <!-- JARDINAGEM -->
+    <img src="3c79be4c-0a0b-433e-9f8b-5adf0187528b.jpeg" alt="Serviço de poda" data-categoria="jardinagem" loading="lazy">
+    <img src="75d91bf2-f0ef-441b-b44f-4f7d6022d7a8.jpeg" alt="Serviço de jardinagem" data-categoria="jardinagem" loading="lazy">
+    <img src="23A07FAC-FA75-4E86-9100-54CAEEDB0AA3.jpeg" alt="Serviço de poda" data-categoria="jardinagem" loading="lazy">
+    <img src="9F0FE4B2-0046-4A6F-9E3A-9183CCE6613F.jpeg" alt="Serviço de jardinagem" data-categoria="jardinagem" loading="lazy">
+    <img src="8FE481D8-4EFB-4D22-990E-D73A3255BE36.jpeg" alt="Serviço de jardinagem" data-categoria="jardinagem" loading="lazy">
+
+    <!-- PINTURA -->
+    <img src="020f6268-c9d6-456a-a622-3c7a67ccac12.jpeg" alt="Serviço de pintura" data-categoria="pintura" loading="lazy">
+    <img src="IMG_1286.jpeg" alt="Serviço de pintura" data-categoria="pintura" loading="lazy">
+    <img src="2A9F5752-E775-4D0E-AF34-6E2A193ECBED.jpeg" alt="Serviço de pintura" data-categoria="pintura" loading="lazy">
+
+    <!-- PISCINA -->
+    <img src="a0a1acea-4018-49ee-a4c7-206516c87752.jpeg" alt="Serviço de piscina" data-categoria="piscina" loading="lazy">
+    <img src="c56e4f21-b237-4db2-9773-1986f94c93eb.jpeg" alt="Serviço de piscina" data-categoria="piscina" loading="lazy">
+    <img src="4E7FB411-6D98-4DA3-B3E5-CDF05065823D.jpeg" alt="Serviço de piscina" data-categoria="piscina" loading="lazy">
+    <img src="0BB450E3-E604-4B2A-ABDF-BFCD1AD6CD7B.jpeg" alt="Serviço de piscina" data-categoria="piscina" loading="lazy">
+
+    <!-- ALVENARIA -->
+    <img src="56384996-C5A8-4676-AD2C-F64148CAD73F.jpeg" alt="Serviço de alvenaria" data-categoria="alvenaria" loading="lazy">
+    <img src="fdaa908f-6a7a-4ae2-82af-af91c2f84b90.jpeg" alt="Serviço de alvenaria" data-categoria="alvenaria" loading="lazy">
+    <img src="69372CB0-29AB-4EC8-A647-A9776B444CBB.jpeg" alt="Serviço de alvenaria" data-categoria="alvenaria" loading="lazy">
+    <img src="3160026F-3B28-4B47-B41D-1C570E77E66C.jpeg" alt="Serviço de alvenaria" data-categoria="alvenaria" loading="lazy">
+    <img src="91EF6080-096B-4EBE-A42D-CD57B5851952.jpeg" alt="Serviço de alvenaria" data-categoria="alvenaria" loading="lazy">
+    <img src="dd74a769-d7b0-48f4-866b-ed4d60f59427.jpeg" alt="Serviço de alvenaria" data-categoria="alvenaria" loading="lazy">
+
+    <!-- HIDRÁULICA -->
+    <img src="1E4205A0-E130-4C42-8868-63D85DE83AF0.jpeg" alt="Serviço hidráulico" data-categoria="hidraulica" loading="lazy">
+    <img src="C1D10F44-F1AE-497A-9D2F-4F10CA592AF7.jpeg" alt="Serviço hidráulico" data-categoria="hidraulica" loading="lazy">
+    <img src="IMG_1304.jpeg" alt="Serviço hidráulico" data-categoria="hidraulica" loading="lazy">
+
+    <!-- LIMPEZA DE CAIXA D'ÁGUA -->
+    <img src="8cbb3c5c-0fa0-4b94-8856-013ee1348be9.jpeg" alt="Limpeza de caixa d'água" data-categoria="caixa-dagua" loading="lazy">
+    <img src="IMG_1297.jpeg" alt="Limpeza de caixa d'água" data-categoria="caixa-dagua" loading="lazy">
+    <img src="IMG_1300.jpeg" alt="Limpeza de caixa d'água" data-categoria="caixa-dagua" loading="lazy">
+
+  </div>
+
+  <button id="verTodosTrabalhos" class="botao-galeria" type="button">
+    Ver todos os trabalhos
+  </button>
+
+  <dialog id="fotoAmpliada" class="foto-modal">
+    <button type="button" class="fechar-modal" aria-label="Fechar">×</button>
+    <img src="" alt="Foto ampliada">
+  </dialog>
 </section>
+
 
 <section id="contato" class="contato">
     <h2>Fale Conosco!</h2>
