@@ -489,4 +489,154 @@ footer {
 }
 
 
+/* GALERIA DE TRABALHOS */
+.galeria {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 55px 20px;
+  text-align: center;
+}
+
+.galeria-cabecalho h2 {
+  color: #315c40;
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.galeria-cabecalho p {
+  color: #657368;
+  margin-bottom: 25px;
+}
+
+.galeria-filtros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.filtro {
+  border: 1px solid #315c40;
+  background: transparent;
+  color: #315c40;
+  padding: 9px 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: .2s;
+}
+
+.filtro:hover,
+.filtro.ativo {
+  background: #315c40;
+  color: white;
+}
+
+.galeria-grade {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.galeria-grade img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform .25s;
+}
+
+.galeria-grade img:hover {
+  transform: scale(1.03);
+}
+
+.galeria-grade img[hidden] {
+  display: none;
+}
+
+.botao-galeria {
+  margin-top: 28px;
+  padding: 12px 25px;
+  background: #315c40;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.botao-galeria:hover {
+  background: #264a32;
+}
+
+/* FOTO AMPLIADA */
+.foto-modal {
+  border: none;
+  padding: 15px;
+  background: #fff;
+  border-radius: 14px;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: visible;
+}
+
+.foto-modal::backdrop {
+  background: rgba(0, 0, 0, .85);
+}
+
+.foto-modal img {
+  display: block;
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.fechar-modal {
+  display: block;
+  margin-left: auto;
+  margin-bottom: 8px;
+  border: none;
+  background: #315c40;
+  color: white;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* CELULAR */
+@media (max-width: 600px) {
+  .galeria {
+    padding: 40px 15px;
+  }
+
+  .galeria-cabecalho h2 {
+    font-size: 26px;
+  }
+
+  .galeria-filtros {
+    gap: 8px;
+  }
+
+  .filtro {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .galeria-grade {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 9px;
+  }
+
+  .galeria-grade img {
+    height: 155px;
+  }
+}
+
+
+
 
