@@ -1,23 +1,63 @@
-function enviarAgendamento(event) {
+async function enviarAgendamento(event) {
   event.preventDefault();
+
   const nome = document.getElementById("nomeCliente").value;
   const telefone = document.getElementById("telefoneCliente").value;
   const servico = document.getElementById("servicoCliente").value;
   const data = document.getElementById("dataCliente").value;
   const hora = document.getElementById("horaCliente").value;
   const observacoes = document.getElementById("obsCliente").value;
-  const mensagem =
-    "Olá! Vim pelo site da EdSoluções e gostaria de solicitar um agendamento.\n\n" +
-    "Nome: " + nome + "\n" +
-    "WhatsApp: " + telefone + "\n" +
-    "Serviço: " + servico + "\n" +
-    "Data desejada: " + data + "\n" +
-    "Horário desejado: " + hora + "\n" +
-    "Observações: " + (observacoes || "Nenhuma");
-  const url = "https://wa.me/5585998674421?text=" +
-    encodeURIComponent(mensagem);
-  window.open(url, "_blank");
+
+  const abaWhatsApp = window.open("", "_blank");
+
+  if (!abaWhatsApp) {
+    alert("Permita pop-ups para continuar com o agendamento.");
+    return;
+  }
+
+  try {
+    const clienteSupabase = window.supabase.createClient(
+      "https://iynlldpesqcmdkjtwdny.supabase.co",
+      "sb_publishable_kyhkqeE_uz1x_8QP70F5wQ_tq5dKU_R"
+    );
+
+    const { error } = await clienteSupabase
+      .from("Agendamentos")
+      .insert({
+        nome: nome,
+        telefone: telefone,
+        servico: servico,
+        data: data,
+        horario: hora,
+        observacoes: observacoes,
+        status: "pendente"
+      });
+
+    if (error) {
+      throw error;
+    }
+
+    const mensagem =
+      "Olá! Vim pelo site da EdSoluções e gostaria de solicitar um agendamento.\n\n" +
+      "Nome: " + nome + "\n" +
+      "WhatsApp: " + telefone + "\n" +
+      "Serviço: " + servico + "\n" +
+      "Data desejada: " + data + "\n" +
+      "Horário desejado: " + hora + "\n" +
+      "Observações: " + (observacoes || "Nenhuma");
+
+    const url = "https://wa.me/5585998674421?text=" +
+      encodeURIComponent(mensagem);
+
+    abaWhatsApp.location.href = url;
+
+  } catch (erro) {
+    abaWhatsApp.close();
+    console.error("Erro ao salvar agendamento:", erro);
+    alert("Não foi possível salvar seu agendamento. Tente novamente.");
+  }
 }
+
 
 
 // GALERIA DE TRABALHOS
